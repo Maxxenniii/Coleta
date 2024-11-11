@@ -31,15 +31,83 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .introducao, .servicos {
+@media (max-width: 768px) @media (max-width: 768px) {
+    /* Ajuste para logo */
+    .logo {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    /* Ajuste para navegação do topo */
+    #topo ul {
+        padding-left: 0;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Ajuste para introdução */
+    .introducao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-introducao {
+        width: 80%;
+        height: auto;
+    }
+
+    .texto-introducao {
+        width: 100%;
+    }
+
+    /* Ajuste para conteúdos */
+    .conteudos {
         flex-direction: column;
         align-items: center;
     }
-    
-    .servico {
+
+    .conteudosBloco {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    /* Ajuste para outras seções */
+    .servico, .extras, .prova-social {
         width: 100%;
         margin-top: 10px;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    /* Ajuste do container principal */
+    #container {
+        padding: 10px;
+    }
+
+    /* Ajuste para botão de chamada à ação */
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Ajuste para elementos de login e cadastro */
+    .tela-login, .tela-cadastro {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    /* Ajuste para navegação no topo */
+    #topo ul a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste do botão de envio no login */
+    .enviar-login {
+        font-size: 14px;
+        padding: 12px;
     }
 }
 
