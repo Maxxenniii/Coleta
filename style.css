@@ -30,7 +30,7 @@ body {
     background-image: linear-gradient(45deg, rgb(125, 143, 124), rgb(36, 65, 24));
 }
 
-/* Responsividade */
+/* Responsividade para diferentes seções */
 @media (max-width: 768px) {
     /* Ajuste para logo */
     .logo {
@@ -38,20 +38,11 @@ body {
         text-align: center;
     }
     
-    /* Ajuste do menu para telas pequenas */
+    /* Ajuste para navegação do topo */
     #topo ul {
         padding-left: 0;
-        padding-bottom: 0;
-        flex-direction: column; /* Coloca o menu em uma coluna */
+        flex-direction: column;
         gap: 5px;
-    }
-
-    #topo ul a {
-        display: block; /* Garante que cada item ocupe toda a largura em telas menores */
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        font-size: 1rem;
     }
 
     /* Ajuste para introdução */
@@ -100,11 +91,17 @@ body {
         width: 100%;
         text-align: center;
     }
-
+    
     /* Ajuste para elementos de login e cadastro */
     .tela-login, .tela-cadastro {
         width: 90%;
         padding: 20px;
+    }
+    
+    /* Ajuste para navegação no topo */
+    #topo ul a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 
     /* Ajuste do botão de envio no login */
