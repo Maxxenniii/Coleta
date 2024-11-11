@@ -31,7 +31,7 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 768px) @media (max-width: 768px) {
+@media (max-width: 768px){
     /* Ajuste para logo */
     .logo {
         padding-right: 0;
