@@ -31,18 +31,27 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 768px){
+@media (max-width: 768px) {
     /* Ajuste para logo */
     .logo {
         padding-right: 0;
         text-align: center;
     }
     
-    /* Ajuste para navegação do topo */
+    /* Ajuste do menu para telas pequenas */
     #topo ul {
         padding-left: 0;
-        flex-direction: column;
+        padding-bottom: 0;
+        flex-direction: column; /* Coloca o menu em uma coluna */
         gap: 5px;
+    }
+
+    #topo ul a {
+        display: block; /* Garante que cada item ocupe toda a largura em telas menores */
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
     }
 
     /* Ajuste para introdução */
@@ -91,17 +100,11 @@ body {
         width: 100%;
         text-align: center;
     }
-    
+
     /* Ajuste para elementos de login e cadastro */
     .tela-login, .tela-cadastro {
         width: 90%;
         padding: 20px;
-    }
-    
-    /* Ajuste para navegação no topo */
-    #topo ul a {
-        padding: 8px 16px;
-        font-size: 0.9rem;
     }
 
     /* Ajuste do botão de envio no login */
